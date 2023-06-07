@@ -1,0 +1,38 @@
+.breadcrumb{
+    margin: 0 !important;
+    height: auto;
+
+    
+}
+.breadcrumb .breadtext{
+    margin-top: 2.1%;
+    margin-bottom: 2.1%;
+    margin-left: 5%;
+}
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.breadcrumb .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: -0.017em;
+    color: #011220;
+}
+
+.breadcrumb .text-active {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: -0.017em;
+    color: #4590D1;
+}
+
+.breadcrumb i {
+    color: #56AFFB;
+    font-weight: bolder;
+    
+}

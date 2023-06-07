@@ -1,0 +1,61 @@
+.maps iframe {
+  width: 100%;
+}
+
+.maps {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 88px;
+  margin-top: 20px;
+}
+
+.info {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.017em;
+  color: #011220;
+}
+.info .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 26px;
+}
+
+.info .bold {
+  font-weight: 700;
+  margin-right: 7px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.info .text {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+@media (min-width: 429px) and (max-width: 834px) {
+  .info .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .info {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .info .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

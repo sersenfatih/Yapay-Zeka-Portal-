@@ -1,0 +1,35 @@
+.announcepage {
+    margin-top: 3%;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.announcepage img {
+    width: 80%;
+    height: auto;
+    max-height: 600px;
+}
+
+
+.announcepage .date-text {
+    margin-top: 2%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.017em;
+    color: #679BAF;
+    margin-left: 10%;
+}
+
+.announcepage .body-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.017em;
+    color: #011220;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,171 @@
+.footer {
+  color: #fff;
+  background-image: linear-gradient(to right, #123552, #336e9e);
+  height: auto;
+  width: 100%;
+  font-family: "Poppins";
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.footermenu {
+  display: flex;
+  width: 100%;
+}
+
+.footer i {
+  color: #487daa;
+}
+
+.footer a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.017em;
+  color: #ffffff;
+}
+
+.footer .row {
+  padding-top: 5%;
+  padding-bottom: 6%;
+  height: auto;
+  width: 100%;
+}
+
+.footer i {
+  color: #7cbbf1;
+}
+
+.footer a:hover {
+  color: #56affb;
+}
+.footer .logo {
+  padding-left: 6.4%;
+  padding-right: 6.3%;
+}
+
+.footer .logo img {
+  width: 267px;
+  height: 61px;
+}
+.footer .phone {
+  width: 52.3%;
+}
+.footer .footermenu1 {
+  width: 50%;
+}
+
+.footermenu .footermenu3 {
+  width: 17.38%;
+}
+.footermenu .footermenu4 {
+  width: 49%;
+}
+
+.footermenu .footermenu3 h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.017em;
+  color: #86c7ff;
+}
+
+.footer .phone {
+  display: flex;
+}
+.footer .footermenu3 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 429px) and (max-width: 834px) {
+  .footer {
+    display: block;
+  }
+  .footermenu {
+    margin: 0;
+    padding-left: 5%;
+    width: 100%;
+  }
+  .footer .logo {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+  }
+
+  .footer .logo img {
+    margin: 0;
+    width: 267px;
+    height: 61px;
+  }
+
+  .footermenu .footermenu1 {
+    margin-left: 0%;
+    width: 51%;
+  }
+
+  .footermenu .footermenu2 {
+    margin-left: 0%;
+    width: 49%;
+  }
+  .footermenu .footermenu3 {
+    margin-left: 0%;
+    width: 17.38%;
+    padding-left: 1%;
+  }
+
+  .footermenu .footermenu4 {
+    margin-left: 0%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .footer {
+    display: block;
+  }
+  .footer .footermenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .footermenu .phone {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7%;
+    width: 100%;
+  }
+  .footermenu .footermenu1 {
+    margin-left: 0%;
+  }
+
+  .footermenu .footermenu2 {
+    margin-left: 0%;
+  }
+  .footermenu .footermenu3 {
+    padding-left: 9%;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+  }
+  .footermenu3 .links {
+    display: inline-flex;
+    margin-right: 2%;
+  }
+  .footermenu3 img{
+    margin-right: 13%;
+  }
+
+  .footermenu .footermenu4 {
+    padding-left: 9%;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 6.4%;
+    margin-bottom: 16.85%;
+  }
+  .footer .logo {
+    margin-top: 8.4%;
+    margin-bottom: 14.8%;
+  }
+}

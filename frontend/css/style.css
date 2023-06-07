@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+button {
+  border: none !important;
+}
+
+.card {
+  border: none !important;
+}
+img {
+  border: none !important ;
+}
+input {
+  box-shadow: none !important;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .col {
+  height: fit-content;
+}
+@media screen and (max-width: 428px) {
+  .breadcrumb {
+    display: none !important;
+  }
+}

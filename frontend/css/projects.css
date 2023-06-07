@@ -1,0 +1,115 @@
+.projects .row {
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.projects .card-subtitle {
+  color: #b9775d;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.017em;
+}
+
+.projects .card-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.017em;
+  color: #123552;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.projects .card-text {
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.017em;
+  color: #011220;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.projects .card .btn,
+.projects .card .btn:focus {
+  background-color: #df9172 !important;
+  margin: 0;
+  width: 156px;
+  color: white !important;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .category {
+  background-color: #e5a78e;
+  color: #fff;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.projects .card {
+  margin-left: 2.38%;
+  margin-right: 2.38%;
+  width: auto;
+  height: auto;
+  border-radius: 0px 0px 6px 6px;
+  filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.25));
+  margin-bottom: 30px;
+}
+
+.projects .card-image img {
+  width: 100%;
+  height: 284px;
+  position: relative;
+}
+
+.projects .card-image .category {
+  position: absolute;
+  top: 37%;
+  right: 2%;
+}
+.projects .card-col {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+@media (min-width: 429px) and (max-width: 834px) {
+  .projects .card-col {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .projects .card-col {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+}

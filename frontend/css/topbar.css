@@ -1,0 +1,83 @@
+.topbar {
+  background-color: #e5f2f6;
+  color: #143754;
+  width: 100%;
+  height: auto;
+  font-family: "Poppins";
+  display: flex;
+  padding-left: 8.5%;
+  padding-right: 5.65%;
+}
+
+.topbar .left {
+  margin-top: 1.042%;
+  margin-bottom: 1.042%;
+  width: 33.3%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.017em;
+  color: #123552;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .centered {
+  margin-top: 1.042%;
+  margin-bottom: 1.042%;
+  text-align: center;
+  width: 33.3%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.017em;
+  color: #123552;
+}
+
+.topbar .right {
+  margin-top: 1.042%;
+  margin-bottom: 1.042%;
+  width: 33.3%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.017em;
+  color: #123552;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.topbar .right a {
+  padding-left: 1%;
+}
+
+@media screen and (max-width: 834px) {
+  .topbar .centered {
+    display: none;
+    width: 0%;
+  }
+  .topbar .left {
+    width: 50%;
+  }
+  .topbar .right {
+    width: 50%;
+    float: right !important;
+
+    text-align: right;
+    padding-right: 4%;
+  }
+  .topbar img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .topbar .left,
+  .topbar .right {
+    display: none;
+  }
+  .topbar {
+    height: 50px;
+  }
+}

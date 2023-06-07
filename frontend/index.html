@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkiye Yapay Zeka Portalı</title>
+    <link rel="icon" href="img/web-ico.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/homeslider.css">
+    <link rel="stylesheet" href="css/announcement.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/link.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/bottombar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="left">info@tyzp.gov.tr</div>
+
+        <div class="centered">TÜRKİYE'NİN YAPAY ZEKA PORTALI</div>
+
+        <div class="right">Bizi Takip Edin
+            <a href=""><img src="img/icons/linkedin.svg" alt=""></a>
+            <a href=""><img src="img/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="img/icons/twitter.svg" alt=""></a>
+            <a href=""><img src="img/icons/instagram.svg" alt=""></a>
+            <a href=""><img src="img/icons/youtube.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="menuico">
+            <span class="menuicon" style="cursor:pointer" onclick="openNav()"><img src="img/icons/menu.svg" alt="">
+                <div class="menutext">
+                    Menu
+                </div>
+            </span>
+        </div>
+        <div class="hdr">
+
+            <div class="logo my-auto">
+                <a href="index.html"><img src="img/Logo.svg" alt=""></a>
+            </div>
+
+            <div class="search my-auto">
+                <div class="input-group input-group-lg">
+                    <input type="search" class="form-control" placeholder="Arama yapılacak kelime girin...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-lg"><img src="img/icons/search.svg" alt=""></button>
+                        <button style="cursor:pointer" onclick="openSearch()" type="button"
+                            class="btn btn-lg tbltbtn"><img src="img/icons/minisearch.svg" alt=""><span
+                                class="btntext">Arama</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="language my-auto">
+                <div class="dropdown">
+                    <button class="btn text-light" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icons/language.svg" alt="">
+                        <p class="ssh"> TR</p>
+                        <p class="slang"> Türkçe</p>
+                        <img src="img/icons/chevrondown.svg" alt="">
+                    </button>
+                    <div class="dropdown-menu ddmenu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item translate" id="tr-TR" href="#">
+                            <img src="img/icons/check.svg" alt="">
+                            <p class="dsh"> TR</p>
+                            <p class="dlang"> Türkçe</p>
+                        </a>
+                        <a class="dropdown-item translate" id="en-EN" href="#">
+                            <p class="dsh"> EN</p>
+                            <p class="dlang"> English</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tabletsearch" class="searchoverlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()"><img src="img/icons/closebtn.svg"
+                alt=""></a>
+        <div class="title">Site İçinde Arama Yapın</div>
+        <div class="input-group input-group-lg">
+            <input type="search" class="form-control" placeholder="Arama yapılacak kelime girin...">
+            <div class="line"></div>
+            <div class="input-group-append">
+                <button type="button" class="btn btn-lg"><i class="bi bi-search"><span class="btntext">Arama
+                            Yap</span></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myNav" class="menuoverlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/icons/closebtn.svg" alt=""></a>
+        <div class="topnav" id="myTopnav">
+            <div class="micon">
+                <img src="img/icons/menu.svg" alt="">Menü
+            </div>
+            <a class="active" href="index.html">ANASAYFA</a>
+            <div class="line"></div>
+            <div class="dropdown">
+                <a href="aboutus.html" class="dropbtn">TYZP HAKKINDA
+                    <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a class="history" href="aboutus.html#historycontainer">Tarihçe</a>
+                    <a class="gt" href="aboutus.html#gtcontainer">Amaç ve Hedefler</a>
+                    <a class="organization" href="aboutus.html#organizationcontainer">Organizasyon</a>
+                </div>
+            </div>
+            <div class="line"></div>
+            <a href="announcements.html">DUYURULAR</a>
+            <div class="line"></div>
+            <a href="dictionary.html">SÖZLÜK</a>
+            <div class="line"></div>
+            <a href="datasets.html">VERİ SETLERİ</a>
+            <div class="line"></div>
+            <a href="resources.html">KAYNAKLAR</a>
+            <div class="line"></div>
+            <a href="links.html">BAĞLANTILAR</a>
+            <div class="line"></div>
+            <a href="projects.html">PROJELER</a>
+            <div class="line"></div>
+            <a href="contact.html">İLETİŞİM</a>
+        </div>
+    </div>
+
+
+    <div class="slidercontainer">
+        <div class="carousel slide carousel-showmanymoveone " data-bs-ride="carousel" id="slider1">
+
+            <div id="carousel-inner" class="carousel-inner" style=>
+                <div id="slider1st" class="carousel-item active">
+
+                </div>
+
+            </div>
+            <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <div id="announcementcontainer" class="announcementcontainer">
+        <h1 class="text-center text-light ">DUYURULAR</h1>
+        <p class="txt text-center ">Haberler, Etkinlikler, Konferanslar</p>
+        <div class="line"></div>
+        <div class="slider">
+            <div class="prev">
+                <a class="swiper-button-prev annprev"></a>
+            </div>
+            <div class="swiper annswiper">
+                <div id="announcementswiper" class="swiper-wrapper">
+                </div>
+            </div>
+            <div class="next">
+                <a class="swiper-button-next annnext"></a>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button onclick="window.location.href='announcements.html' " class="btn btn-lg"><img class=""
+                    src="img/icons/grid.svg" alt="">
+                Tüm Duyuruları Göster</button>
+        </div>
+    </div>
+
+    <div class="projectscontainer">
+        <h1 class="text-center text-light">PROJELER</h1>
+        <p class="txt text-center">Devam etmekte olan veya tamamlanmış projelerimiz</p>
+        <div class="line"></div>
+        <div class="slider">
+            <div class="prev">
+                <a class="proprev swiper-button-prev"></a>
+            </div>
+            <div class="swiper proswiper">
+                <div id="projectswiper" class="swiper-wrapper">
+                </div>
+            </div>
+            <div class="next">
+                <a class="pronext swiper-button-next"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button onclick="window.location.href='projects.html' " class="btn btn-lg "><img src="img/icons/grid.svg" alt=""> Tüm Projeleri Göster</button>
+        </div>
+
+    </div>
+
+    <div class="linkscontainer">
+        <h1 class="text-center text-light">BAĞLANTILARIMIZ</h1>
+        <p class="txt text-center">Bizi destekleyen ve desteklediğimiz kurumlar</p>
+        <div class="line"></div>
+        <div class="slider">
+            <div class="prev">
+                <a class="linprev swiper-button-prev"></a>
+            </div>
+            <div class="swiper linswiper">
+                <div id="linkswiper" class="swiper-wrapper">
+                </div>
+            </div>
+            <div class="next">
+                <a class="linnext swiper-button-next"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center ">
+
+            <button onclick="window.location.href='links.html' " class="btn btn-lg"><img src="img/icons/grid.svg" alt=""> Tüm Bağlantıları Göster</button>
+        </div>
+
+    </div>
+
+    <div class="registercontainer">
+        <h1 class="text-center text-light">E-BÜLTENİMİZE KAYIT OLUN</h1>
+        <p class="txt text-center">Duyurular ve etkinliklerden haberdar olmak için E-bülten'e kayıt
+            olun
+        </p>
+        <div class="line"></div>
+        <div class="register">
+            <div class="input-group input-group-lg">
+                <input id="mail" type="search" class="form-control rounded-3" placeholder="E-Posta adresinizi giriniz">
+                <div class="input-group-append">
+                    <button id="mailbtn" type="submit" class="btn btn-lg">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo.svg" alt=""></a>
+        </div>
+        <div class="footermenu">
+            <div class="phone">
+                <div class="footermenu1">
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="index.html">Anasayfa</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="aboutus.html">Hakkımızda</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="announcements.html">Duyurular</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="dictionary.html">Sözlük</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="datasets.html">Veri Setleri</a></i>
+                    </div>
+
+                </div>
+                <div class="footermenu2 ">
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="">Kaynaklar</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="">Bağlantılar</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="projects.html">Projeler</a></i>
+                    </div>
+                    <div>
+                        <img src="img/icons/chevron.svg" alt=""> <a href="">İletişim</a></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footermenu3">
+                <h4>Linkler</h4>
+                <div class="links">
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">AITR</a></i>
+                </div>
+                <div class="links">
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">TRAI</a></i>
+                </div>
+                <div class="links">
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">ITU</a></i>
+                </div>
+                <div class="links">
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">AI</a></i>
+                </div>
+                <div class="links">
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">SSYZ</a></i>
+                </div>
+            </div>
+            <div class="footermenu4">
+                <div>
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">Açık Kaynak Platformu </a></i>
+                </div>
+                <div>
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">Yapay Zeka Enstitüsü</a></i>
+                </div>
+                <div>
+                    <img src="img/icons/chevron.svg" alt=""> <a href="">Ulusal Yapay Zeka Stratejisi</a></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottombar">
+
+        <div class="left my-auto">
+            Tüm Hakları Saklıdır. Tübitak Bilgem Yapay Zeka Enstitüsü @2023
+        </div>
+        <div class="right">Bizi Takip Edin
+            <a href=""><img src="img/icons/linkedin.svg" alt=""></a>
+            <a href=""><img src="img/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="img/icons/twitter.svg" alt=""></a>
+            <a href=""><img src="img/icons/instagram.svg" alt=""></a>
+            <a href=""><img src="img/icons/youtube.svg" alt=""></a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+        function openSearch() {
+            document.getElementById("tabletsearch").style.display = "block";
+        }
+        function closeSearch() {
+            document.getElementById("tabletsearch").style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            axios.get("http://localhost:1337/api/homesliders?populate=*")
+                .then(response => {
+                    const data = response.data.data;
+                    for (i = 0; i < data.length; i++) {
+                        imglink = "http://localhost:1337" + data[i].attributes.photo.data.attributes.url;
+
+                        if (data[0] == data[i]) {
+
+                            $("#slider1st").append("<img class=w-100 src=" + imglink + " alt=><div class=carousel-caption> <div class=slidertitle>" + data[i].attributes.title + "</div> <div class=sliderbigtitle>" + data[i].attributes.bigtitle + "</div><div class=slidertext>" + data[i].attributes.body + "</div></div>");
+
+                        } else {
+
+                            $("#carousel-inner").append("<div class=carousel-item><img class=w-100 src=" + imglink + " alt=><div class=carousel-caption> <div class=slidertitle>" + data[i].attributes.title + "</div> <div class=sliderbigtitle>" + data[i].attributes.bigtitle + "</div><div class=slidertext>" + data[i].attributes.body + "</div></div></div>");
+
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            axios.get("http://localhost:1337/api/announcements?populate=*")
+                .then(response => {
+                    const data = response.data.data;
+                    for (i = data.length - 1; i > -1; i--) {
+                        link = "http://localhost:1337"
+                        imglink = link + data[i].attributes.img.data.attributes.url;
+                        $("#announcementswiper").append("<div class=swiper-slide> <div class=card>  <img src=" + imglink + " class=card-img-top alt=><div class=card-subtitle>" + data[i].attributes.date + "</div><a id=title" + i + " class=card-title>" + data[i].attributes.title + "</a><p class=card-text maxlength=1>" + data[i].attributes.body + "</p> <button id=btn" + i + " class=btn><i class=bi-chevron-right ></i> Devamını Oku </button> </div></div>");
+
+                        const clickbutton = document.getElementById("btn" + i);
+                        const clicktitle = document.getElementById("title" + i);
+
+                        clicktitle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const id = e.target.id.replace('title', '');
+                            handleClick(id);
+                        });
+
+                        clickbutton.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const id = e.target.id.replace('btn', '');
+                            handleClick(id);
+                        });
+
+                        function handleClick(id) {
+                            localStorage.setItem('img', link + data[id].attributes.img.data.attributes.url);
+                            localStorage.setItem('date', data[id].attributes.date);
+                            localStorage.setItem('title', data[id].attributes.title);
+                            localStorage.setItem('body', data[id].attributes.body);
+                            window.location.href = "announcepage.html?id=" + id;
+                        }
+
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        });
+
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            axios.get("http://localhost:1337/api/projects?populate=*")
+                .then(response => {
+                    const data = response.data.data;
+                    for (i = 0; i < data.length; i++) {
+                        imglink = "http://localhost:1337" + data[i].attributes.img.data.attributes.url;
+                        $("#projectswiper").append("<div class=swiper-slide> <div class=card> <div class=image> <img src=" + imglink + " class=card-img-top alt=> <a href=><div class=category>" + data[i].attributes.category + "</div> </a></div>  <div class=card-subtitle>" + data[i].attributes.date + "</div> <h4 class=card-title>" + data[i].attributes.title + "</h4><p class=card-text>" + data[i].attributes.body + "</p> <button class=btn><i class=bi-chevron-right ></i>Proje Detayı</button> </div></div>");
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            axios.get("http://localhost:1337/api/links?populate=*")
+                .then(response => {
+                    const data = response.data.data;
+                    for (i = 0; i < data.length; i++) {
+                        imglink = "http://localhost:1337" + data[i].attributes.img.data.attributes.url;
+                        $("#linkswiper").append("<div class=swiper-slide><div class=card><a href=" + data[i].attributes.url + "><img src=" + imglink + " class=card-img-top alt=></a> </div></div>")
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        });
+    </script>
+
+
+    <script>
+        mailbtn.addEventListener('click', (e) => {
+
+
+            var mail = document.getElementById('mail').value;
+            axios.get("http://localhost:1337/api/mails")
+                .then(response => {
+                    const data = response.data.data;
+                    var mail = document.getElementById('mail').value;
+                    var id = data.length
+
+                    axios.post("http://localhost:1337/api/mails", {
+                        data: {
+                            id: data.length,
+                            mail: mail
+                        }
+                    })
+
+                })
+
+
+
+        })
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".annswiper", {
+            allowTouchMove: true,
+            slidesPerView: 1.05,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                429: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0,
+                    autoplay: false,
+                },
+                835: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    allowTouchMove: false,
+                    autoplay: false,
+                    navigation: {
+                        nextEl: ".annnext",
+                        prevEl: ".annprev",
+                    },
+                },
+                1160: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    allowTouchMove: false,
+                    autoplay: false,
+                    navigation: {
+                        nextEl: ".annnext",
+                        prevEl: ".annprev",
+                    },
+
+                },
+            },
+
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".proswiper", {
+            allowTouchMove: true,
+            slidesPerView: 1.05,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                429: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0,
+                    autoplay: false,
+                },
+                835: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    allowTouchMove: false,
+                    autoplay: false,
+                    navigation: {
+                        nextEl: ".pronext",
+                        prevEl: ".proprev",
+                    },
+                },
+                1160: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    allowTouchMove: false,
+                    autoplay: false,
+                    navigation: {
+                        nextEl: ".pronext",
+                        prevEl: ".proprev",
+                    },
+
+                },
+            },
+
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".linswiper", {
+            allowTouchMove: true,
+            slidesPerView: 1.5,
+            spaceBetween: 0,
+            breakpoints: {
+                834: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    allowTouchMove: true,
+                },
+                600: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 0,
+                    allowTouchMove: true,
+                },
+
+                1260: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    allowTouchMove: false,
+                    navigation: {
+                        nextEl: ".linnext",
+                        prevEl: ".linprev",
+                    },
+                },
+            },
+        });
+    </script>
+    <script>
+        const dropdownItems = document.querySelectorAll('.language .dropdown-item');
+
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', () => {
+                dropdownItems.forEach(i => {
+                    i.querySelector('.check').style.display = 'none';
+                });
+                item.querySelector('.check').style.display = 'inline';
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

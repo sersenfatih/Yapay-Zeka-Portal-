@@ -1,0 +1,155 @@
+.gtcontainer {
+  background-color: #56affb;
+  height: auto;
+  font-family: "Poppins";
+  border-bottom: 6px solid #3472a7;
+}
+.gtcontainer .texts {
+  display: flex;
+  margin-bottom: 5.4%;
+}
+.gtcontainer .tablet {
+  display: flex;
+  width: 66.6%;
+  margin-right: 6%;
+}
+
+.gtcontainer h3 {
+  color: white;
+  text-align: center;
+  padding-top: 34px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.gtcontainer .line {
+  color: white !important;
+  border-top: 5px solid white !important;
+  border-radius: 4px;
+  width: 226px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4.73%;
+}
+
+.gtcontainer .lefttext {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.017em;
+  width: 33.3%;
+  margin-left: 5.5%;
+  margin-right: 1.9%;
+}
+.gtcontainer .texts .title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.017em;
+  margin-bottom: 2.5%;
+}
+
+.gtcontainer .image {
+  margin-top: auto!important;
+  margin-bottom: auto!important;  
+  width: 50%;
+}
+
+.gtcontainer img {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.gtcontainer .righttext {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.017em;
+  width: 50%;
+  padding-left: 5.1%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (min-width: 429px) and (max-width: 834px) {
+  .gtcontainer .texts {
+    display: block;
+    margin-bottom: 12.5%;
+  }
+  .gtcontainer .tablet {
+    margin-top: 5.4%;
+    width: 100%;
+    padding-left: 4.6%;
+  }
+  .tablet img {
+    width: 100%;
+    height: auto;
+  }
+  .gtcontainer .image {
+    margin: 0px;
+    margin-left: 1%;
+    width: 50%;
+  }
+  .gtcontainer .righttext {
+    margin-right: 7%;
+    padding-left: 4%;
+    width: 50%;
+  }
+  .gtcontainer .lefttext {
+    margin: 0;
+    width: 100%;
+    padding-left: 5.9%;
+    padding-right: 7.5%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .gtcontainer .texts {
+    display: block;
+    margin-bottom: 12.5%;
+  }
+  .gtcontainer .tablet {
+    margin-top: 5.4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tablet img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+    height: auto;
+  }
+  .gtcontainer .image {
+    margin: 0px;
+    width: 100%;
+    padding-left: 14.5%;
+    padding-right: 14.5%;
+    padding-bottom: 7%;
+  }
+  .gtcontainer .righttext {
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-left: 5.9%;
+    padding-right: 7.5%;
+  }
+  .gtcontainer .lefttext {
+    margin: 0;
+    width: 100%;
+    padding-left: 5.9%;
+    padding-right: 7.5%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

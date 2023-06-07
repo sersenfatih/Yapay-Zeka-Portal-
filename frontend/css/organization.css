@@ -1,0 +1,147 @@
+.organizationcontainer {
+    background-color: #F2F8FB;
+    height: auto;
+    font-family: 'Poppins';
+    border-bottom: 6px solid #7EBCD3;
+    display: block;
+}
+
+.organizationcontainer h3 {
+    color: #507B8B;
+    text-align: center;
+    padding-top: 4%;
+    margin-bottom: 1.45%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.017em;
+}
+
+
+
+.organizationcontainer .line {
+    color: #7EBCD3 !important;
+    border-top: 5px solid #7EBCD3 !important;
+    border-radius: 4px;
+    width: 192px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6.5%;
+}
+.organizationcontainer .swiper-slide{
+    width: fit-content ;
+    margin-bottom: 13.35%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.organizationcontainer .card {
+    background-color: #F2F8FB;
+    width: auto;    
+}
+
+.organizationcontainer h4 {
+    margin-top: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #385a67;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.017em;
+    width: auto;
+    
+}
+
+.organizationcontainer h5 {
+    margin-top: 5px;
+    text-align: left;
+    color: #385a67;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.017em;
+    width: fit-content;
+}
+
+.organizationcontainer img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.organizationcontainer .mySwiper{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.organizationcontainer .swiper-button-next,
+.swiper-button-prev {
+    color: #385a67 !important;
+}
+
+.organizationcontainer .organization{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+@media (min-width:429px) and (max-width:834px) {
+    .organizationcontainer .organization{
+        display: block;
+        padding: 0;
+    }
+    .organizationcontainer img{
+        margin: 0;
+        max-width: 187px;
+    }
+    .organizationcontainer .mySwiper1,
+    .organizationcontainer .mySwiper2{
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+    .organizationcontainer .swiper-slide{
+        width: fit-content ;
+        margin: 0;
+    }
+    .organizationcontainer h4{
+        margin-top: 8.1%;
+        margin-bottom: 3.3%;
+    }
+    .organizationcontainer .mySwiper2{
+        margin-top: 5.76%;
+        margin-bottom: 8.16% ;
+    }
+
+}
+
+@media screen and (max-width:428px) {
+    .organizationcontainer .organization{
+        display: flex;
+    }
+    .organizationcontainer img{
+        margin: 0;
+        max-width: 147px;
+    }
+    .organizationcontainer .swiper-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .organizationcontainer .swiper-slide{
+        width: auto !important ;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .organizationcontainer h4{
+        margin-top: 8.1%;
+        margin-bottom: 3.3%;
+    }
+    .organizationcontainer .card{
+        margin-bottom: 39%;       
+    }
+
+}
